@@ -1,0 +1,19 @@
+spring.mvc.view.prefix: /
+spring.mvc.view.suffix: .html
+application.message: Hello World
+
+# Session timeout in seconds.
+server.session.timeout:
+  999999999
+  
+server:
+  port: 8004
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://172.18.4.117:27017/Test
+          
+logging.config:
+     classpath:logback.xml
+          
