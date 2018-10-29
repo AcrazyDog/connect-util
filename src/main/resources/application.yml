@@ -13,7 +13,12 @@ spring:
   data:
     mongodb:
       uri: mongodb://172.18.4.117:27017/Test
-          
+  elastic: 
+    host: 172.18.4.117
+    port: 9300    
+         
 logging.config:
      classpath:logback.xml
           
+#spring.elastic.port: 172.18.4.117
+#spring.elastic.port: 9300   
