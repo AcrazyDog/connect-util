@@ -20,7 +20,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.alibaba.fastjson.JSONObject;
 import com.sy.connect.util.Application;
-import com.sy.connect.util.mongo.user.pojo.User;
+import com.sy.connect.util.domain.User;
 import com.sy.connect.util.mongo.user.service.UserService;
 
 /**

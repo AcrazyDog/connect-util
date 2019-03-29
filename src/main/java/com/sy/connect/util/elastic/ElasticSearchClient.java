@@ -5,7 +5,7 @@ import java.net.UnknownHostException;
 
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.common.transport.TransportAddress;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,7 +38,7 @@ public class ElasticSearchClient {
 	public TransportClient getClient() {
 		TransportClient client = null;
 		try {
-			client = new PreBuiltTransportClient(Settings.EMPTY).addTransportAddresses(new InetSocketTransportAddress(InetAddress.getByName(host), port));
+			client = new PreBuiltTransportClient(Settings.EMPTY).addTransportAddresses(new TransportAddress(InetAddress.getByName(host), port));
 		} catch (UnknownHostException e) {
 			logger.error("获得elasticsearch连接失败,原因：{}", e);
 		}

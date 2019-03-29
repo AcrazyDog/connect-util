@@ -7,8 +7,8 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.sy.connect.util.domain.User;
 import com.sy.connect.util.mongo.repository.MongoRepository;
-import com.sy.connect.util.mongo.user.pojo.User;
 
 /**
  * <p>
